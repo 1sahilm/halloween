@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Halloween || Sahil Mishra</title>
+</head>
+<body>
+    <section>
+        <img src="assests/images/bg.jpg" alt="" id="bg">
+        <img src="assests/images/bats.png" alt="" id="bats">
+        <img src="assests/images/castle.png" alt="" id="castle">
+        <img src="assests/images/img.png" alt="" id="img">
+        <img src="assests/images/wolf.png" id="wolf" alt="">
+    </section>
+    <div class="sec">
+        <div class="content">
+            <h2>Happy Halloween</h2>
+            <p>Halloween’s origins can be traced back to antiquity. Most point to Samhain, a Celtic festival which commemorated the end of the harvest season and the blurring of the physical and spirit worlds, as Halloween’s forebear. Over the ages, the holiday evolved, taking on Christian influences, European myth and American consumerism. Today, Halloween is celebrated with trick-or-treating, costumes, jack-o-lanterns and scary movies—all things which would likely be unrecognizable to those who took part in the holiday’s earliest forms. </p>
+            <p>Ancient Celts, who lived 2,000 years ago in the area that is now Ireland, the United Kingdom and northern France, marked Samhain at the midpoint between the fall equinox and the winter solstice. During this time of year, hearth fires in family homes were left to burn out while the harvest was gathered. After the harvest work was complete, celebrants joined with Druid priests to light massive bonfires and pray. 
+
+                Celts believed that the barrier between the physical and spirit worlds was breachable during Samhain. It was expected that ancestors might cross over during this time as well, and Celts would dress as animals and monsters so that fairies were not tempted to kidnap them.</p>
+                <h2>Why Halloween is celebrated?</h2>
+                <p>
+                    It is believed by historians, that the origin of the Halloween celebration dates back to an ancient Celtic festival called Samhain wherein people lit bonfires and wear spooky costumes in order to keep away the ghosts. ... The day came to be known as All Saints Day, which incorporated some traditions of Samhain.</p>
+            </div>
+            <div>
+                <h4>Design by -- Sahil Mishra</h4>
+            </div>
+    </div>
+
+    <!-- gsap tweenmax scroller start -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+<!-- gsap tweenmax scroller end -->
+<script>
+    gsap.to("#img" ,{
+        scrollTrigger : {
+            scrub:1.5,
+        },
+        x : 1500,
+        y : 500,
+    })
+
+    
+    gsap.from("#wolf" ,{
+        scrollTrigger : {
+            scrub:1.5,
+        },
+        x : 400,
+    })
+
+    gsap.from("#castle" ,{
+        scrollTrigger : {
+            scrub:0.5,
+        },
+        x : -100,
+    })
+
+    gsap.to("#bats" ,{
+        scrollTrigger : {
+            scrub:0.5,
+        },
+        scale : 1.5,
+    })
+</script>
+</body>
+</html>
